@@ -1,3 +1,5 @@
 transformers==4.22.2
 gradio==3.4.0
 pylint==2.11.1
+black==19.10b0
+click==8.0.2
