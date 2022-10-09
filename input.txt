@@ -1,0 +1,6 @@
+"This is a sunny day"
+"I like the weather today"
+"I met a lovely dog on the way home"
+"My favorite soccer team lose the game, what a bad day"
+"I failed in the exam"
+"I finally get an intership"
