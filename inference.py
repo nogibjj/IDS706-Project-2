@@ -12,10 +12,18 @@ if __name__ == "__main__":
 
     classifier = pipeline("text-classification", model="bhadresh-savani/bert-base-uncased-emotion", top_k=1)
     dout = analytics_emo(din)
-    
-    data_trunc = {}
-    data_trunc["sentence"] = din
-    data_trunc["sentiment"] = dout
 
-    with open(output_file, 'a') as f:
-        f.write(json.dumps(data_trunc)+'\n')
+    f2 = open(output_file, "w")
+    # read the input data
+    with open(din, "r") as f:
+        line = f.readline()
+        while line:
+            dout = analytics_emo(line)    
+            data_trunc = {}
+            data_trunc["sentence"] = line
+            data_trunc["sentiment"] = dout
+            f2.write(json.dumps(data_trunc)+'\n')
+            line = f.readline()
+    f2.close()
+
+        
