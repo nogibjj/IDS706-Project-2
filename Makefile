@@ -10,6 +10,5 @@ format:
 lint:
 	pylint --disable=R,C,W1203,W1202 *.py
 test:
-	# python -m pytest -vv --cov=app --cov-report term-missing tests/*.py
 
 all: install format lint test
