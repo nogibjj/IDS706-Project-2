@@ -18,7 +18,7 @@ The model used in this project is pre-trained model ([bhadresh-savani/bert-base-
 
 ## Data
 
-Since the model is pre-trained, this project didn't use any dataset to train the model.
+Since the model is pre-trained, this project didn't use any dataset to train the model. The data for demonstration is manually created.
 
 
 
