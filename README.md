@@ -64,7 +64,7 @@ There are also two ways to use this project:
 
 - Use Code
 
-  - `docker pull docker pull shunianchen/ids706:inference`
+  - `docker pull shunianchen/ids706:inference`
   - `docker run --rm -it shunianchen/ids706:inference`
 
   
